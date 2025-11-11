@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    background-color: #E7F2EF; 
+    
+}
+
+.profile {
+    width: 100%; 
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+   
+}
+
+img.back {
+    width: 2.083%;
+    height: 2.083%;
+    cursor: pointer;
+    margin-left: 2.083%;
+}
+
+img.pic {
+    width: 3.472%;
+    height: 3.472%;
+    border-radius: 50%;
+    border: 1px solid grey;
+    margin-right: 2.083%;
+}
+
+.user{
+    width: 83.958%;
+    height: 18.066%;
+    background-image: linear-gradient(to bottom, #EAEFEF, #B8CFCE);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    margin-left: 8.021%;
+}
+
+.user h1{
+    font-family: "Poppins", sans-serif;
+    padding-top: 3%;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.75);
+    font-size: 2.25rem;
+}
+
+#metrics{
+    width:83.958%;
+    height: 18.066%;
+    margin-left: 8.021%;
+    margin-top: 3%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 2%;
+    
+
+}
+
+#metrics > div{
+    width: 100%;
+    height:100%;
+    background-image: linear-gradient(to bottom, #EAEFEF, #B8CFCE);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    
+    
+}
+
+#metrics > div h3{
+    font-family: "Instrument Sans", sans-serif;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.75);
+    font-size: 1.563rem;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+#metrics > div h1{
+    font-family: "Inter", sans-serif;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.75);
+    font-size: 2.625rem;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+    font-style: italic;
+
+}
+
+#anc{
+    width:83.958%;
+    height:45%;
+    margin-left: 8.021%;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap:2%;
+    margin-top: 4.98%;
+    padding-bottom: 5%;
+}
+
+.announcement{
+    width:100%;
+    height:100%;
+    background-image: linear-gradient(to bottom, #EAEFEF, #B8CFCE);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    
+}
+
+.announcement h2{
+    font-family: "Instrument Sans", sans-serif;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.75);
+    font-size: 1.563rem;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.announcement > div{
+    width: 90%;
+    height: 65px;
+    background-color: #B8CFCE;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border-radius: 10px;
+}
+
+.calendar{
+    width:100%;
+    height:100%;
+    background-color: white;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    margin-right: 5%;
+    
+    
+}
+
+@media (max-width: 767px) {
+    
+    img.back {
+        width: 3.5%;
+        height: 3.5%;
+    }
+
+    img.pic {
+        width: 5%;
+        height: 5%;
+    }   
+    .user {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .user h1 {
+        font-size: 1.75rem;
+        padding-top: 20px;
+    }
+
+    #metrics {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 15px;
+        height: auto;
+        margin-top: 30px;
+    }
+
+    #metrics > div {
+        height: 150px;
+    }
+
+    #metrics > div h1 {
+        font-size: 1.75rem;
+    }
+
+    #anc {
+        grid-template-columns: 1fr;
+        width: 90%;
+        height: 100%;
+        margin: 30px auto;
+    }
+
+    .announcement{
+        height: 300px;
+    }
+
+    .calendar{
+        height: 300px;
+        padding-top: 30px;
+    }
+}
